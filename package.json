@@ -1,0 +1,10 @@
+{
+  "name": "xcom",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.7"
+  }
+}

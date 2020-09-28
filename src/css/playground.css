@@ -1,0 +1,135 @@
+body {
+    zoom: 3;
+}
+
+div {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+
+.tile {
+    background: url('.././images/playground_trans.png')  0px -32px;
+    position: absolute;
+}
+
+.tile-container {
+    position: relative;
+    height: 15px;
+    width: 32px;
+}
+
+.ground-house {
+    background: url('.././images/playground_trans.png')  -99px -114px;
+    position: absolute;
+}
+
+.rightWall {
+    background: url('.././images/playground_trans.png')  -99px -49px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 18px;
+    height: 32px;
+}
+
+.so-wall {
+    background: url('.././images/playground_trans.png')  -99px -49px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 18px;
+    height: 32px;
+}
+
+.sw-wall {
+    background: url('.././images/playground_trans.png')  -80px -49px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 18px;
+    height: 32px;
+}
+
+.nw-wall {
+    background: url('.././images/playground_trans.png')  -99px -49px;
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+
+    width: 18px;
+    height: 32px;
+}
+
+.no-wall {
+    background: url('.././images/playground_trans.png')  -80px -49px;
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+
+    width: 18px;
+    height: 32px;
+}
+
+
+.wall {
+    width: 18px;
+    height: 32px;
+
+    z-index: 1000;
+}
+
+.rightWall-window {
+    background: url('.././images/playground_trans.png')  -165px -49px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.leftWall {
+    background: url('.././images/playground_trans.png')  -80px -49px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.leftWall-door {
+    background: url('.././images/playground_trans.png')  -80px -90px;
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+
+}
+
+.leftWall-window {
+    background: url('.././images/playground_trans.png')  -146px -49px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.wall-corner {
+    background: url('.././images/playground_trans.png')  -212px -48px;
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    width: 4px;
+    height: 25px;
+}
