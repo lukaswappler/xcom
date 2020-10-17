@@ -1,0 +1,21 @@
+"scss": "npm sass --watch playground.scss:transpiledPlayground.css",
+    "watch-sass": "node-sass sass/main.scss css/style.css --watch",
+    "compile-sass": "node-sass sass/playground.scss playground.comp.css",
+    "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 --input playground.scss --output dist/styles.css",
+    "test-sass": "node-sass playground.scss --output dist",
+    
+
+
+        
+    /*
+    "compile-sass": "node-sass src\\assets\\sass\\playground.scss dist\\assets\\css\\playground.css",
+    //"watch-sass": "node-sass --watch src\\assets\\sass\\playground.scss dist\\assets\\css\\playground.css",
+    */
+
+
+
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+
+    "nodemon-start": "npm run nodemon --exec \"npm start\"",
+    "watch": "nodemon --exec \"npm run serve && npm run watch-css\"",
+    
