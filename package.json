@@ -1,10 +1,47 @@
 {
   "name": "xcom",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "@types/express": "^4.17.8",
+    "@types/typescript": "^2.0.0",
+    "express": "^4.17.1",
+    "rimraf": "^3.0.2"
+  },
   "devDependencies": {
+    "typescript": "^4.0.3",
     "webpack": "^4.17.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.7"
-  }
+  },
+  "description": "xcom-playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "scss": "npm sass --watch playground.scss:transpiledPlayground.css",
+
+    "watch-sass": "node-sass sass/main.scss css/style.css --watch",
+    "compile-sass": "node-sass sass/playground.scss playground.comp.css",
+
+    "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 --input playground.scss --output dist/styles.css",
+
+    "test-sass" : "node-sass playground.scss --output dist",
+
+    "copy:assets": "cp -r src/assets dist/",
+    "copy:html": "find src -name '*.html' -type f -exec cp {} dist \\;",
+    "copy": "npm run copy:assets && npm run copy:html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc && npm run scss",
+    "start": "npm run build && npm run copy && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukaswappler/xcom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukaswappler/xcom/issues"
+  },
+  "homepage": "https://github.com/lukaswappler/xcom#readme"
 }

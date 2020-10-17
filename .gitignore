@@ -25,3 +25,9 @@ hs_err_pid*
 #intelliJ
 .idea
 *.iml
+
+#node
+node_modules/
+dist/
+package-lock.json
+
